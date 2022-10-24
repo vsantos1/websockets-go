@@ -9,7 +9,9 @@ import (
 
 
 func main() {
+	
 	app := fiber.New()
+	println("Test")
 	service.SetupRoutes(app)
 	
 	log.Fatal(app.Listen(":3000"))

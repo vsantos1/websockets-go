@@ -15,7 +15,7 @@ func SetupRoutes(app *fiber.App) {
 	})
 	
 	
-	app.Get("/mice",websocket.New(Websocket))
+	app.Get("/chat/:id",websocket.New(Websocket))
 	
 
 }
